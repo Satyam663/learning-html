@@ -1,35 +1,67 @@
-  
-  <!DOCTYPE HTML>
-  <HTML>
-	<HEAD>
-		<TITLE>MY OWN BG TS</TITLE>
-	</HEAD>
-	
-	<body>
-		<p>Sample form</p>
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+	<TITLE>BgTs</TITLE>
+  </HEAD>
+  <body>
+	<h3>Create Account</h3>
+	<form action="action.php">
+	  <label for="userId">User Id</label>
+	  <input type="text" id="userId" name="userId" placeholder="Enter name" required>
+	  <br>
+	  <br>
+	  <label for="password">Password</label>
+	  <input type="password" id="password" name="password" placeholder="Enter password" required>
+	  <br>
+	  <br>
+	  <label for="rePassword">Re-enter Password</label>
+	  <input type="password" id="rePassword" name="rePassword" placeholder="Enter password" required>
+	  <br>
+	  <br>
+	  <label>
+		<input type="radio" value="New user" id="newUser" name="user" title="new user" required>Retailer </label>
+	  <label>
+		<input type="radio" value="Old user" id="oldUser" name="user" title="old user" required>Customer </label>
+	  <br>
+	  <h5>Please select your interest-:</h5>
+	  <select name="social media" id="000" required>
+		<option value="None">None</option>
+		<option value="FB">Facebook</option>
+		<option value="Insta">Instagram</option>
+		<option value="WhatsApp">WhatsApp</option>
+		<option value="All">All of these</option>
+	  </select>
+	  <br>
+	  <br>
+	  <label for="whatsapp">
+		<input type="checkbox" value="whatsapp" name="check" id="whatsapp" required> Join our official <b>
+		  <i>WhatsApp Group</i>
+		</b> for the latest updates. </label>
+	  <br>
+	  <label for="termsAndConditions">
+		<input title="Agree to terms and conditions to proceed further" type="checkbox" value="termsAndConditions" name="check" id="termsAndConditions" required> I agree <cite>
+		  <details>
+			<summary>Terms & Conditions</summary>
+			<p>"All content on this site, including text, images, graphics, and code, is the intellectual property of [BGTS] unless otherwise noted. You may not reproduce, distribute, or create derivative works without our express written permission."</p>
+		  </details>
+		</cite>
+	  </label>
+	  <br>
+	  <br>
+	  <label for="suggestions"><b>Feedback :</b> </label>
+	  <br>
+	  <textarea id="suggestions" name="suggestions" placeholder="Any suggestions for page improvement !!" rows="5" cols="40"></textarea>
+	  <br>
+	  <br>
+	  <button type="button">
+		<b>SignUp</b>
+	  </button>
+	</form>
 
-		<form action="action.php">
-			<input 	type="text" placeholder="Enter name" > <br><br>
-			<input 	type="password" placeholder="Enter password" ><br><br>
-			
-			<label id="100">
-			<input  title="new user"	type="radio" value="New user" id="100" name="user" >New user 
-			</label> <br><br>
+	<footer>
+		<p>For Any Query, please mail us <a href="mailto:xyz@abc.com">here..</a> </p>
+		
+	  </footer>
 
-			<label id="200">
-			<input 	title="old user" type="radio" value="Old user" id="200" name="user" >Old user 
-			</label> <br><br>
-			
-			
-			<input type="submit" >
-
-		</form>
-
-{
-	user:New user,
-	
-}
-
-	  </body>
-	
-  </HTML>
+  </body>
+</HTML>
