@@ -5,13 +5,13 @@
   </HEAD>
   <body>
 	<h3>Create Account</h3>
-	<form action="action.php">
+	<form onsubmit="">
 	  <label for="userId">User Id</label>
 	  <input type="text" id="userId" name="userId" placeholder="Enter name" required>
 	  <br>
 	  <br>
 	  <label for="password">Password</label>
-	  <input type="password" id="password" name="password" placeholder="Enter password" required>
+	  <input type="password" pattern="" id="password" name="password" placeholder="Enter password" required>
 	  <br>
 	  <br>
 	  <label for="rePassword">Re-enter Password</label>
@@ -39,12 +39,13 @@
 		</b> for the latest updates. </label>
 	  <br>
 	  <label for="termsAndConditions">
-		<input title="Agree to terms and conditions to proceed further" type="checkbox" value="termsAndConditions" name="check" id="termsAndConditions" required> I agree <cite>
+		<input title="Agree to terms and conditions to proceed further" type="checkbox" value="termsAndConditions" name="check" id="termsAndConditions" required>
+		 I agree <cite>
 		  <details>
 			<summary>Terms & Conditions</summary>
 			<p>"All content on this site, including text, images, graphics, and code, is the intellectual property of [BGTS] unless otherwise noted. You may not reproduce, distribute, or create derivative works without our express written permission."</p>
 		  </details>
-		</cite>
+		</span>
 	  </label>
 	  <br>
 	  <br>
@@ -53,7 +54,7 @@
 	  <textarea id="suggestions" name="suggestions" placeholder="Any suggestions for page improvement !!" rows="5" cols="40"></textarea>
 	  <br>
 	  <br>
-	  <button type="button">
+	  <button type="submit">
 		<b>SignUp</b>
 	  </button>
 	</form>
@@ -65,5 +66,11 @@
 
 	  <img src="https://www.shutterstock.com/shutterstock/photos/2070374948/display_1500/stock-vector-chuckle-emoji-emoticon-cover-mouth-with-hand-while-laughing-smile-with-flushed-face-d-stylized-2070374948.jpg" alt="Thanks for visit" width="150" height="150">
 	  <span class="wave">👋</span>
+
+
+	  <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials">
+	</iframe>
+
+
   </body>
 </HTML>
