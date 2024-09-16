@@ -75,5 +75,10 @@ h2{
         float: left;
 }
 
+.blog-post img{
+    height: 150px;
+    width: auto;
+}
+
 
 
