@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: white; */
+}
+
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+
+a{
+    margin-right: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+#content{
+    height: 630px;
+}
+.contentBox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.serach_container{
+    display: inline;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+}
+
+
