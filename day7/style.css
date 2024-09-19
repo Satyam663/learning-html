@@ -15,7 +15,7 @@
 
 .nav-logo {
     height: 50px;
-    width: 100px;
+    width: 150px;
 
 }
 
@@ -23,7 +23,7 @@
     background-image: url(./amazon_logo.png);
     background-size: cover;
     height: 50px;
-    width: 100px;
+    width: 150px;
 }
 
 .border {
@@ -138,6 +138,8 @@ span{
 }
 
 .panel-deals{
+    
+   
     font-size: 0.9rem;
     font-weight: 700;
 }
@@ -145,6 +147,24 @@ span{
 /* hero section */
 
 .hero-section{
-    background-image: url(./hero.png);
-    height: ;
+    background-image: url(./GreatIndianFest.png);
+    background-size: cover;
+    height: 450px;
+
+}
+
+/* shop-section */
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(233, 86, 128);
+}
+
+.box{
+    border: 2px solid black;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    
 }
