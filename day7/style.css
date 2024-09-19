@@ -127,6 +127,11 @@ span{
     justify-content: space-evenly;
 }
 
+.panel-all{
+    display: flex;
+    margin-left: 70px;
+}
+
 .panel-ops p{
    display: inline; 
    margin-left: 15px;
@@ -149,7 +154,7 @@ span{
 .hero-section{
     background-image: url(./GreatIndianFest.png);
     background-size: cover;
-    height: 450px;
+    height: 275px;
 
 }
 
@@ -166,5 +171,17 @@ span{
     height: 400px;
     width: 23%;
     background-color: white;
+    padding: 20px 0px 15px;
     
+}
+
+.box-img{
+    height: 110px;
+    width: 115px;
+}
+
+
+.box-img1{
+    height: 110px;
+    width: 115px;
 }
