@@ -168,20 +168,34 @@ span{
 
 .box{
     border: 2px solid black;
-    height: 400px;
-    width: 23%;
+    height: 320px;
+    width: 23.5%;
     background-color: white;
     padding: 20px 0px 15px;
+    display: flex;
+    justify-content: space-evenly;
+        
+}
+
+.box1,.box2,.box3,.box4{
+    display: flex;
+    flex-direction: column;
     
 }
 
-.box-img{
-    height: 110px;
-    width: 115px;
+
+.box-content1,.box-content2,.box-content3,.box-content4{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 
-.box-img1{
+
+.box-img1,.box-img2,.box-img3,.box-img4,.box-img5,.box-img6,.box-img7,.box-img8,.box-img9,.box-img10,.box-img11,.box-img12,.box-img13,.box-img14,.box-img15,.box-img16{
     height: 110px;
     width: 115px;
+    object-fit: cover;
 }
