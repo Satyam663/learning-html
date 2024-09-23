@@ -193,30 +193,15 @@ span{
     margin-right: 30px;
 }
 
-.box-content1 p,.box-content2 p,.box-content3 p,.box-content4 p{
-
-
-}
-
-
 
 .box-img1,.box-img2,.box-img3,.box-img4,.box-img5,.box-img6,.box-img7,.box-img8,.box-img9,.box-img10,.box-img11,.box-img12,.box-img13,.box-img14,.box-img15,.box-img16{
     height: 110px;
-    width: 115px;
+    width: 140px;
     object-fit: cover;
 }
 
 
-.boxsignin_box{
-    border: 2px solid black;
-    height: 150px;
-    width: 23.5%;
-    background-color: white;
-    padding: 20px 0px 15px;
-    display: flex;
-    justify-content: space-evenly;
-        
-}
+
 
 footer{
     margin-top: 15px;
