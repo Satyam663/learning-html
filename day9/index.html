@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -18,10 +21,11 @@
                 <li><a href="#">Women</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul> 
+            </ul>
             <div class="cart">
-                <img src="cart-icon.png" alt="Cart Icon">
+                <i class="fa fa-shopping-cart"></i>
             </div>
+
             <div class="profile_pic">
                 <img src="./css/img/image-avatar.png" alt="Profile Picture">
             </div>
@@ -33,13 +37,14 @@
             <div class="product_image">
                 <img src="./css/img/image-product-1.jpg" alt="Sneaker Image">
                 <div class="thumbnail_images">
-                    <img class="thumbnail_images1" src="./css/img/image-product-1-thumbnail.jpg" alt="Sneaker Thumbnail 1">
+                    <img class="thumbnail_images1" src="./css/img/image-product-1-thumbnail.jpg"
+                        alt="Sneaker Thumbnail 1">
                     <img src="./css/img/image-product-2-thumbnail.jpg" alt="Sneaker Thumbnail 2">
                     <img src="./css/img/image-product-3-thumbnail.jpg" alt="Sneaker Thumbnail 3">
                     <img src="./css/img/image-product-4-thumbnail.jpg" alt="Sneaker Thumbnail 4">
                 </div>
             </div>
-            
+
             <div class="product_info">
                 <h6>SNEAKER COMPANY</h6>
                 <h1>Fall Limited Edition<br> Sneakers</h1>
@@ -49,20 +54,30 @@
                 <div class="price">
                     <span class="current_price">$125.00</span>
                     <span class="discount">50%</span>
-                    
+
                 </div>
                 <span class="original_price">$250.00</span>
-                
+
                 <div class="quantity_container">
-                    <button class="quantity_decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="quantity_increase">+</button>
-                    <button class="add_to_cart_btn">Add to cart</button>
+
+                    <div class="qty_container">
+                        <div class="">-</div>
+                        <div class="">0</div>
+                        <div class="">+</div>
+                    </div>
+
+                    <button class="add_to_cart_btn">
+                        <span class="cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </span>
+                        Add to cart
+                    </button>
                 </div>
-                
+
             </div>
         </section>
     </main>
 
 </body>
+
 </html>
