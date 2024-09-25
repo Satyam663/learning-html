@@ -162,33 +162,30 @@ nav {
 .original_price {
     text-decoration: line-through;
     color: hsl(217, 3%, 50%);
+
 }
 
 .quantity_container {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 20px;
-    gap: 8px;
+    gap: 15px;
 
 }
 
 .quantity_container button {
-    background-color: rgb(215, 215, 215);
+    background-color: hsl(26, 100%, 55%);
     border: none;
-    color: hsl(26, 100%, 55%);
-    /* width: 30px; */
-    /* height: 30px; */
+    color: black;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     border-radius: 8px;
-    /* flex-direction: row; */
     padding: 1rem;
-    /* margin-left: 1rem; */
+    width: 180px;
+    padding: 1rem;
+
+
 }
 
 .qty_container {
@@ -201,19 +198,11 @@ nav {
 
     div {
         margin: 0px;
-        /* border: none; */
         color: hsl(26, 100%, 55%);
-        /* width: 30px; */
-        /* height: 30px; */
         cursor: pointer;
         font-size: 18px;
         font-weight: bold;
 
-        /* display: flex;
-    justify-content: center;
-    align-items: center; */
-        /* border-radius: 8px; */
-        /* flex-direction: row; */
     }
 
     div:nth-child(2) {
@@ -222,11 +211,6 @@ nav {
 
 }
 
-/* .quantity {
-    margin: 0 15px;
-    font-size: 18px;
-    font-weight: 700;
-} */
 
 .add_to_cart_btn {
     background-color: hsl(26, 100%, 55%);
@@ -237,6 +221,8 @@ nav {
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
+    /* padding: 1rem; */
+
 
 }
 
