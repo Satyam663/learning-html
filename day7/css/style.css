@@ -72,13 +72,13 @@
     border: none;
 }
 
-.search-input{
+.search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
 }
 
-.search-icon{
+.search-icon {
     width: 45px;
     display: flex;
     justify-content: center;
@@ -87,38 +87,38 @@
     background-color: #febd68;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    color: #0f1111;    
+    color: #0f1111;
 }
 
-.nav-search:hover{
-    border: 2px solid orange ;
+.nav-search:hover {
+    border: 2px solid orange;
 }
 
 /* box 4 */
 
-span{
-  font-size: 0.7rem;  
+span {
+    font-size: 0.7rem;
 }
 
-.nav-second{
+.nav-second {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
 /* box 6 */
- 
+
 .nav-cart i {
-   font-size: 30px;  
+    font-size: 30px;
 }
 
-.nav-cart{
-   font-size: 0.85rem;
-   font-weight: 700; 
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
 /* panel */
 
-.panel{
+.panel {
     height: 40px;
     background-color: #222f3d;
     display: flex;
@@ -127,31 +127,31 @@ span{
     justify-content: space-evenly;
 }
 
-.panel-all{
+.panel-all {
     display: flex;
     margin-left: 70px;
 }
 
-.panel-ops p{
-   display: inline; 
-   margin-left: 15px;
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
 }
 
-.panel-ops{
+.panel-ops {
     width: 70%;
     font-size: 0.85rem;
 }
 
-.panel-deals{
-    
-   
+.panel-deals {
+
+
     font-size: 0.9rem;
     font-weight: 700;
 }
 
 /* hero section */
 
-.hero-section{
+.hero-section {
     background-image: url(./cssImages/GreatIndianFest.png);
     background-size: cover;
     height: 275px;
@@ -160,14 +160,14 @@ span{
 
 /* shop-section */
 
-.shop-section{
+.shop-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(233, 86, 128);
 }
 
-.box{
+.box {
     /* border: 2px solid black; */
     height: 350px;
     width: 23.5%;
@@ -175,17 +175,23 @@ span{
     padding: 20px 0px 15px;
     display: flex;
     justify-content: space-evenly;
-        
+
 }
 
-.box1,.box2,.box3,.box4{
+.box1,
+.box2,
+.box3,
+.box4 {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
-.box-content1,.box-content2,.box-content3,.box-content4{
+.box-content1,
+.box-content2,
+.box-content3,
+.box-content4 {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -194,7 +200,22 @@ span{
 }
 
 
-.box-img1,.box-img2,.box-img3,.box-img4,.box-img5,.box-img6,.box-img7,.box-img8,.box-img9,.box-img10,.box-img11,.box-img12,.box-img13,.box-img14,.box-img15,.box-img16{
+.box-img1,
+.box-img2,
+.box-img3,
+.box-img4,
+.box-img5,
+.box-img6,
+.box-img7,
+.box-img8,
+.box-img9,
+.box-img10,
+.box-img11,
+.box-img12,
+.box-img13,
+.box-img14,
+.box-img15,
+.box-img16 {
     height: 110px;
     width: 140px;
     object-fit: cover;
@@ -202,12 +223,11 @@ span{
 
 
 
-
-footer{
+footer {
     margin-top: 15px;
 }
 
-.foot_panel1{
+.foot_panel1 {
     background-color: #37475a;
     color: white;
     height: 50px;
@@ -217,7 +237,7 @@ footer{
     font-size: 0.85rem;
 }
 
-.foot_panel2{
+.foot_panel2 {
     background-color: #222f3d;
     color: white;
     height: 400px;
@@ -226,18 +246,18 @@ footer{
 
 }
 
-ul{
+ul {
     margin-top: 60px;
 }
 
-ul a{
+ul a {
     display: block;
     font-size: 0.85rem;
     margin-top: 10px;
     color: #DDDDDD;
 }
 
-.foot_panel3{
+.foot_panel3 {
     background-color: #222f3d;
     color: white;
     border-top: 0.5px solid white;
@@ -254,18 +274,62 @@ ul a{
     width: 150px;
 }
 
-.foot_panel4{
+.foot_panel4 {
     background-color: #0f1111;
     color: white;
     height: 80px;
     font-size: 0.75rem;
-    text-align: center;    
+    text-align: center;
 }
 
-.pages{
+.pages {
     padding-top: 25px;
 }
 
-.copyright{
-     padding-top: 5px;
+.copyright {
+    padding-top: 5px;
+}
+
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 0.85rem;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box-content {
+        grid-template-columns: 1fr;
+    }
 }

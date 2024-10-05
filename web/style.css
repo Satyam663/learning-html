@@ -1,0 +1,268 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #fff7f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: baseline;
+
+}
+
+.container_head {
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;
+    width: 100%;
+    /* Ensure it stretches to full width */
+}
+
+.container_head .logo {
+    display: flex;
+    align-items: center;
+}
+
+.container_head button {
+    display: block;
+
+}
+
+
+/* Header */
+header {
+    background-color: #030303;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo span {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+.consultation-btn {
+    background-color: rgb(247, 66, 66);
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.consultation-btn:hover {
+    background-color: #563dad;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.service-box h3 {
+    margin-top: 10px;
+}
+
+.service-box img {
+    height: 150px;
+    width: fit-content;
+
+}
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-img {
+    width: 35%;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* Gallery Section */
+.gallery {
+    /* padding: 80px 20px; */
+    text-align: center;
+}
+
+.img-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/* Booking Section */
+.booking {
+    background-color: #030303;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.booking-content h1 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.booking-content p {
+    margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff7f0;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content button {
+    color: white;
+    background-color: black;
+}
+
+.footer-content span {
+    color: black
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns instead of 3 */
+    }
+
+    .about-content {
+        flex-direction: column;
+        /* Stack the about image and text */
+        text-align: center;
+    }
+
+    .about-img {
+        width: 80%;
+
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    .img-slider {
+        flex-direction: column;
+
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        /* 1 column for small screens */
+    }
+
+    header {
+        flex-direction: column;
+        /* Stack logo and button */
+        text-align: center;
+    }
+
+    .booking-content h1,
+    .intro h1 {
+        font-size: 1.8rem;
+        /* Adjust heading font size */
+    }
+
+    .booking-content p,
+    .intro p {
+        font-size: 1rem;
+        /* Adjust paragraph font size */
+    }
+
+    .about-img {
+        width: 100%;
+        /* Full width on small screens */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        /* Stack footer elements */
+    }
+
+    .consultation-btn {
+        width: 100%;
+        /* Full width button */
+        margin-top: 10px;
+    }
+}
